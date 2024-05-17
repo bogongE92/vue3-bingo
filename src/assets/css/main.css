@@ -1,21 +1,111 @@
 body {
 	background: url('@/assets/images/The-Super-Mario-Bros.webp') no-repeat
 		center center/ cover;
+	color: #333;
 }
 .container {
 	padding: 2em;
 	background-color: rgba(243, 226, 226, 0.48);
 	backdrop-filter: blur(5px);
-	color: #333;
+	margin: 0 auto;
+	max-width: 1280px;
+	width: 100%;
 }
+
 h1 {
-	font-weight: bold;
+	background-color: rgba(243, 226, 226, 0.48);
+	backdrop-filter: blur(5px);
+	font-weight: 500;
+	letter-spacing: -0.1rem;
+	margin-top: 0;
+	line-height: 1.2;
 	text-align: center;
+	margin-left: -1rem;
+	width: calc(100% + 2rem);
 }
-.card {
-	padding: 2em;
+
+.inner-bingo {
+	padding: 2em 1em;
+	background-color: rgba(243, 226, 226, 0.48);
+	backdrop-filter: blur(5px);
 	display: flex;
 	flex-direction: row;
-	align-items: center;
-	gap: 6px;
+	margin-left: -1rem;
+	width: calc(100% + 2rem);
+}
+.bingo-page {
+	flex: 0 0 50%;
+	max-width: 50%;
+	display: block;
+	margin-left: 0;
+	width: 100%;
+	margin-bottom: inherit;
+	padding: 0 1rem;
+}
+.bingo-buttons {
+	flex: 0 0 20%;
+	max-width: 20%;
+	display: block;
+	margin-left: 0;
+	width: 100%;
+	margin-bottom: inherit;
+	padding: 0 1rem;
+}
+.num-board {
+	display: block;
+	flex: 1;
+	margin-left: 0;
+	max-width: 100%;
+	width: 100%;
+	margin-bottom: inherit;
+	padding: 0 1rem;
+}
+
+#bingo-table {
+	table-layout: fixed;
+	border-collapse: collapse;
+	width: 100%;
+}
+#bingo-table,
+#bingo-table th,
+#bingo-table td {
+	border: 1px solid #ccc;
+}
+#bingo-table th,
+#bingo-table td {
+	text-align: center;
+}
+#bingo-table th {
+	border-bottom: 3px double #ccc;
+	padding: 1.2rem 1.5rem;
+}
+#bingo-table td {
+	padding: 0;
+}
+
+#bingo-table td div {
+	padding: 1rem;
+	min-height: 3rem;
+}
+
+#bingo-table input[type='checkbox'] {
+	display: none;
+}
+#bingo-table input[type='checkbox'] :checked + div {
+	background: #ece;
+}
+
+#numbers-list {
+	column-count: 5;
+	margin-top: -5rem;
+}
+#numbers-list li {
+	margin: 0;
+	text-align: right;
+}
+#numbers-list li input {
+	margin: 0;
+}
+#numbers-list li input.checked {
+	background-color: #ece;
 }

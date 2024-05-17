@@ -1,9 +1,9 @@
 <template>
-  <Bingo />
+	<TheView />
 </template>
 
 <script setup>
-import Bingo from '@/components/Bingo.vue'
+import TheView from '@/layout/TheView.vue'
 </script>
 
 <style scoped></style>
