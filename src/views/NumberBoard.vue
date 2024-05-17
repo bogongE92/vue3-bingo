@@ -1,6 +1,8 @@
 <template>
 	<div class="num-board">
-		숫자
+		<ol id="numbers-list">
+			숫자
+		</ol>
 	</div>
 </template>
 

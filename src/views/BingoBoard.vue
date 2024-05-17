@@ -1,51 +1,16 @@
 <template>
 	<div class="bingo-page">
 		<table id="bingo-table">
-			<tbody>
+			<thead>
 				<tr>
-					<td>
-						<input type="checkbox" name="number" value="1" disabled />
-						<div>1</div>
-					</td>
-					<td>
-						<input type="checkbox" name="number" value="1" disabled />
-						<div>1</div>
-					</td>
-					<td>
-						<input type="checkbox" name="number" value="1" disabled />
-						<div>1</div>
-					</td>
-					<td>
-						<input type="checkbox" name="number" value="1" disabled />
-						<div>1</div>
-					</td>
-					<td>
-						<input type="checkbox" name="number" value="1" disabled />
-						<div>1</div>
-					</td>
+					<th>B</th>
+					<th>I</th>
+					<th>N</th>
+					<th>G</th>
+					<th>O</th>
 				</tr>
-				<tr>
-					<td>
-						<input type="checkbox" name="number" value="1" disabled />
-						<div>1</div>
-					</td>
-					<td>
-						<input type="checkbox" name="number" value="1" disabled />
-						<div>1</div>
-					</td>
-					<td>
-						<input type="checkbox" name="number" value="1" disabled />
-						<div>1</div>
-					</td>
-					<td>
-						<input type="checkbox" name="number" value="1" disabled />
-						<div>1</div>
-					</td>
-					<td>
-						<input type="checkbox" name="number" value="1" disabled />
-						<div>1</div>
-					</td>
-				</tr>
+			</thead>
+			<tbody id="bingo-body">
 			</tbody>
 		</table>
 	</div>

@@ -1,6 +1,12 @@
 <template>
     <div class="bingo-buttons">
-        버튼
+        <div>
+            <button id="init">Init</button>
+        </div>
+        <div>
+            <button id="spin">Play</button>
+        </div>
+        <ul id="messages"></ul>
     </div>
 </template>
 
