@@ -1,0 +1,21 @@
+body {
+	background: url('@/assets/images/The-Super-Mario-Bros.webp') no-repeat
+		center center/ cover;
+}
+.container {
+	padding: 2em;
+	background-color: rgba(243, 226, 226, 0.48);
+	backdrop-filter: blur(5px);
+	color: #333;
+}
+h1 {
+	font-weight: bold;
+	text-align: center;
+}
+.card {
+	padding: 2em;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 6px;
+}
